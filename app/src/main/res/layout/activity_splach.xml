@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splach.SplachActivity"
+    android:background="@color/black">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="187dp"
+            android:layout_height="186dp"
+
+            android:layout_marginTop="292dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo"
+            tools:context=".SplachActivity"/>
+
+        <TextView
+            android:id="@+id/Slogan"
+            android:layout_width="193dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/inter_light"
+            android:text="Organize today, succeed tomorrow."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
