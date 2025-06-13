@@ -22,19 +22,19 @@
             app:srcCompat="@drawable/logo"
             tools:context=".SplachActivity"/>
 
-        <TextView
-            android:id="@+id/Slogan"
-            android:layout_width="193dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="140dp"
-            android:fontFamily="@font/inter_light"
-            android:text="Organize today, succeed tomorrow."
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.458"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo" />
+    <TextView
+        android:id="@+id/Slogan"
+        android:layout_width="193dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="172dp"
+        android:fontFamily="@font/inter_light"
+        android:text="Organize today, \nsucceed tomorrow."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

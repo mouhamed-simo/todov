@@ -1,19 +1,18 @@
 package com.example.todow
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.todow.databinding.ActivityExplainBinding
+import com.example.todow.databinding.ActivityItemBinding
 
-class ExplainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityExplainBinding
+class ItemActivity : AppCompatActivity() {
+    private lateinit var binding:ActivityItemBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding= ActivityExplainBinding.inflate(layoutInflater)
+        binding = ActivityItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -21,12 +20,5 @@ class ExplainActivity : AppCompatActivity() {
             insets
         }
 
-
-        binding.btnStarted.setOnClickListener{
-            val prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE)
-            prefs.edit().putBoolean("isFirstTime", false).apply()
-            startActivity(Intent(this@ExplainActivity, MainActivity::class.java))
-            finish()
-        }
     }
 }

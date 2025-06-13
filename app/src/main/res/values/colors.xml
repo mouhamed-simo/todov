@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gold">#FDDC47</color>
     <color name="gris">#2A2929</color>
+    <color name="gris_clair">#4D4D4D</color>
 </resources>

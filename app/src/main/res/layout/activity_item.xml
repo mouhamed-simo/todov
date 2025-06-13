@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ItemActivity"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+
+
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_card"
+        android:padding="15dp">
+
+        <ImageButton
+            android:id="@+id/imageCheck"
+            android:layout_width="36dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:src="@drawable/checkboxvide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/gold" />
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="8:00 AM"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageCheck"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvtitre"
+            android:layout_width="228dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif-monospace"
+            android:text="Go to school"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvtime"
+            app:layout_constraintTop_toBottomOf="@+id/tvtime" />
+
+        <ImageButton
+            android:id="@+id/btnModifier"
+            android:layout_width="43dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.994"
+            app:layout_constraintStart_toEndOf="@+id/tvtime"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/editnote"
+            app:tint="@color/gold" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnModifier"
+            app:layout_constraintTop_toBottomOf="@+id/btnModifier"
+            app:srcCompat="@drawable/delete"
+            app:tint="@color/gold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
