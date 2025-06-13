@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "482749861177",
+    "project_id": "todow-5932f",
+    "storage_bucket": "todow-5932f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482749861177:android:b137a54a414e94b21dace8",
+        "android_client_info": {
+          "package_name": "com.example.todow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6qrRUW3RJcKLwA_uxx8HHoZMJW1Ll5l0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
